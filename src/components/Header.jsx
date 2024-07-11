@@ -1,19 +1,19 @@
-function Scores(){
+function Scores({score}){
 
     return (
         <div className="scores">
-            <div className="presentScore"></div>
+            <div className="presentScore">{score}</div>
             <div className="bestScore"></div>
         </div>
     )
 
 }
 
-export default function Header(){
+export default function Header({score}){
     return (
         <div className="header">
             <div>Memory Game</div>
-            <Scores/>
+            <Scores score={score}/>
         </div>
     )
 }

@@ -1,0 +1,35 @@
+.cardList{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:40px;
+}
+
+.card{
+    background-color: aliceblue;
+    border-radius: 20px;
+    color:black; 
+    cursor:pointer ;
+}
+
+/* .centerpoint{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+} */
+
+
+dialog {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    width: 200px;
+    margin-left: -100px;
+    height: 150px;
+    margin-top: -25px;
+    background: rgb(28, 33, 34);
+}
+
+dialog::backdrop{
+    backdrop-filter: blur(px);
+    background-color: black;
+}
