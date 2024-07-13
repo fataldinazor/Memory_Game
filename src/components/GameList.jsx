@@ -8,6 +8,8 @@ export default function GameList({
   setGameOver,
   setGameWon,
   gameWon,
+  bestScore,
+  setBestScore,
 }) {
   const [cards, setCards] = useState([])
   const [error, setError] = useState(null)
@@ -87,6 +89,7 @@ export default function GameList({
   }
 
   function resetGame() {
+    if (bestScore < score) setBestScore(score)
     setScore(0)
     setSet(() => new Set())
     setGameOver(false)
@@ -95,22 +98,23 @@ export default function GameList({
 
   function GameOver({ score }) {
     return (
-      // <div className="centerpoint">
+      <div className="overlay">
         <dialog open>
-          <div>Game Over</div>
+          <div>Game Over!😔</div>
           <p>Your Score was {score}</p>
-          <button onClick={() => resetGame()}>Restart</button>
+          <button onClick={() => resetGame()}>Play Again</button>
         </dialog>
-      // </div>
+      </div>
     )
   }
 
   function GameWon() {
     return (
-      <div className="centerpoint">
+      <div className="overlay">
         <dialog open>
-          <div>Game Won</div>
-          <button onClick={() => resetGame()}>Restart</button>
+          <div>Congratulations🎉</div>
+          <p>You have won the game</p>
+          <button onClick={() => resetGame()}>Play Again</button>
         </dialog>
       </div>
     )

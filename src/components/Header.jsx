@@ -1,19 +1,22 @@
-function Scores({score}){
+import "../styles/Header.css"
+
+function Scores({score, bestScore}){
 
     return (
         <div className="scores">
-            <div className="presentScore">{score}</div>
-            <div className="bestScore"></div>
+            <div className="presentScore">Current Score: {score}</div>
+            <div className="bestScore">Best Score: {bestScore}</div>
         </div>
     )
 
 }
 
-export default function Header({score}){
+export default function Header({score,bestScore}){
+    
     return (
         <div className="header">
-            <div>Memory Game</div>
-            <Scores score={score}/>
+            <div className="title">🧠Memory Game</div>
+            <Scores score={score} bestScore={bestScore}/>
         </div>
     )
 }

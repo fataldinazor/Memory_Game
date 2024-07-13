@@ -1,0 +1,22 @@
+.header{
+    display:flex;
+    justify-content: space-between;
+    background-color:rgb(39, 100, 80);
+    padding:1.3rem 2rem;
+    font-weight: 700;
+    border-radius: 0 0 10px 10px;
+}
+
+.header>.title{
+    font-size: 2rem;
+}
+
+.scores{
+    display: flex;
+    flex-direction: column;
+}
+
+.scores>div{
+    align-self: self-end;
+}
+
