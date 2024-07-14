@@ -1,67 +1,66 @@
-.cardList{
-    width:60%;
-    height:75%;
-    align-self: center;
-    display:grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap:40px;
+.cardList {
+  width: 60%;
+  height: 75%;
+  align-self: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
 }
 
-.card{
-    background-color: rgb(191, 236, 204);
-    border-radius: 20px;
-    color:black; 
-    cursor:pointer ;
-    font-size: 1.2rem;
-    font-weight: 600;
-    border: 1px solid green
+.card {
+  background-color: rgb(191, 236, 204);
+  border-radius: 20px;
+  color: black;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: 1px solid green;
 }
 
 .overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(14, 22, 15, 0.548);
-    display: block; 
-  }
-
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(14, 22, 15, 0.548);
+  display: block;
+}
 
 dialog {
-    position: fixed; /* positioning in center of page */
-    top: 50vh;
-    left: 35vw;
-    transform: translate(-50%,-50%);
-    height: 200px;
-    width: 400px;
-    background-color: rgb(22, 94, 52);
-    border:3px solid green;
-    border-radius: 20px;
+  position: fixed;
+  top: 50vh;
+  left: 35vw;
+  transform: translate(-50%, -50%);
+  height: 200px;
+  width: 400px;
+  background-color: rgb(22, 94, 52);
+  border: 3px solid green;
+  border-radius: 20px;
 }
 
-dialog>div{
-    font-size: 3.5rem;
-    font-weight: 700;
-    margin:0;
-    padding:0;
+dialog > div {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
 }
 
-dialog>p{
-    font-size: 1.5rem;
-    margin: 0;
-    margin-bottom: 1.5rem;
-    padding:0;
+dialog > p {
+  font-size: 1.5rem;
+  margin: 0;
+  margin-bottom: 1.5rem;
+  padding: 0;
 }
 
-dialog>button{
-    background-color: rgb(8, 78, 8);
+dialog > button {
+  background-color: rgb(8, 78, 8);
 }
 
-.loadingSVG{
-    height:200px;
-    width:200px;
-    position: fixed;
-    left:40%;
-    top:40%;
+.loadingSVG {
+  height: 200px;
+  width: 200px;
+  position: fixed;
+  left: 40%;
+  top: 40%;
 }

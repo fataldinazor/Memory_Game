@@ -1,19 +1,19 @@
 #root {
-  height:100vh;
-  width:100vw;
+  height: 100vh;
+  width: 100vw;
   text-align: center;
   background-color: rgb(204, 253, 229);
 }
 
-.app{
-  height:100vh;
+.app {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-footer{
-  padding:5px;
+footer {
+  padding: 5px;
   color: rgb(7, 102, 12);
   font-weight: 500;
 }

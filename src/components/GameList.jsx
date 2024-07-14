@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import '../styles/GameList.css'
-import loadingIcon from "../assets/loading.svg"
+import loadingIcon from '../assets/loading.svg'
 
 export default function GameList({
   setScore,
@@ -82,7 +82,6 @@ export default function GameList({
       if (score === cards.length) setGameWon(true)
       jumbleCards(cards)
     }
-    //Increase Score, jumble cards and wait for another click from user
   }
 
   function capitalizeTheFirstLetter(string) {
@@ -108,7 +107,8 @@ export default function GameList({
       </div>
     )
   }
-  if(loading) return <img className="loadingSVG" src={loadingIcon} alt="loading Icon"/>
+  if (loading)
+    return <img className="loadingSVG" src={loadingIcon} alt="loading Icon" />
   function GameWon() {
     return (
       <div className="overlay">
