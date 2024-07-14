@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import '../styles/GameList.css'
+import loadingIcon from "../assets/loading.svg"
 
 export default function GameList({
   setScore,
@@ -107,7 +108,7 @@ export default function GameList({
       </div>
     )
   }
-
+  if(loading) return <img className="loadingSVG" src={loadingIcon} alt="loading Icon"/>
   function GameWon() {
     return (
       <div className="overlay">

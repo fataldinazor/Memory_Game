@@ -11,6 +11,7 @@ function App() {
   const [gameOver, setGameOver]= useState(false);
   const [gameWon, setGameWon]= useState(false);
   const [bestScore, setBestScore]= useState(score);
+  
   return (
     <div className="app">
       <Header score={score} bestScore={bestScore}/>
