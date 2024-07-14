@@ -59,5 +59,9 @@ dialog>button{
 }
 
 .loadingSVG{
-    
+    height:200px;
+    width:200px;
+    position: fixed;
+    left:40%;
+    top:40%;
 }
