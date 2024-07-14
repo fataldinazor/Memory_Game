@@ -1,4 +1,5 @@
 import '../styles/Header.css'
+import pokemonTitle from "../assets/pokemonTitle.png"
 
 function Scores({ score, bestScore }) {
   return (
@@ -12,7 +13,10 @@ function Scores({ score, bestScore }) {
 export default function Header({ score, bestScore }) {
   return (
     <div className="header">
-      <div className="title">🧠Memory Game</div>
+      <div className="title" onClick={()=>window.location.reload()}>
+        <img className="pokemonLogo" src={pokemonTitle} alt="pokemon_logo" />
+        <div>Memory Game</div>
+        </div>
       <Scores score={score} bestScore={bestScore} />
     </div>
   )

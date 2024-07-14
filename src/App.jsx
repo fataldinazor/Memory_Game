@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import GameList from './components/GameList'
 import Header from './components/Header'
+import pokemonBg from './assets/pokemon_bg1.jpg'
 
 function App() {
   const [score, setScore] = useState(0)
@@ -10,7 +11,14 @@ function App() {
   const [bestScore, setBestScore] = useState(score)
 
   return (
-    <div className="app">
+    <div
+      className="app"
+      style={{
+        backgroundImage: `url(${pokemonBg})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
+    >
       <Header score={score} bestScore={bestScore} />
       <GameList
         setScore={setScore}
